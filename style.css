@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* background: linear-gradient(135deg, #feda75, #fa7e1e, #d62976,#962fbf,#4f5bd5); */
+    background: linear-gradient(90deg, #b2d8d8, #66b2b2, #008080,#006666,#004c4c);
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 15px;
+}
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.container .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 510px;
+    border-radius: 10px;
+    background: linear-gradient(-135deg, #feda75, #fa7e1e, #d62976,#962fbf,#4f5bd5);
+}
+.container form .display-area {
+    margin-top: 20px;
+}
+
+.container form .game-area {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+form .button{
+    height: 100%;
+    width: 100%;
+    /* align-items: center; */
+    outline-color: none;
+    color: #fff;
+    border: none;
+    border-radius: 7.5px;
+    padding:0;
+    margin:45px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background:#004c4c;
+}
+form .button:hover{
+    background:#008080;
+}
+form .button-clear{
+    height: 100%;
+    width: 100%;
+    /* align-items: center; */
+    outline-color: none;
+    color: #fff;
+    border: none;
+    border-radius: 7.5px;
+    padding:0;
+    margin:0;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background:#004c4c;
+}
+
+form .button-clear:hover{
+    background:#008080;
+}
